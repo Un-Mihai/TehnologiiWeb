@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.step {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.important {
+    color: blue;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+p.important {
+    color: red;
+}
+
+.card-a, .card-b {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+.card-a {
+    box-sizing: content-box;
+}
+
+.card-b {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 1rem 2vw;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    background-color: #e0e0e0;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr 2fr;
+    }
+}
